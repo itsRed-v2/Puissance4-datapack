@@ -1,3 +1,4 @@
+execute as @e[name="test",tag=puissance4] at @s run tp ~ ~-1 ~
 execute at @e[name="test",tag=puissance4] run summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"text":"testbase"}',Tags:[puissance4],Marker:1,Invisible:1}
 
 execute as @e[name="testbase",tag=puissance4] at @s if score direction puissance4 matches 0 align y run tp @s ~ ~ ~ 0 0
