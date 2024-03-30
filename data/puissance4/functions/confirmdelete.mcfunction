@@ -1,0 +1,8 @@
+execute if block ~ ~ ~ oak_wall_sign[facing=north] run setblock ~ ~-1 ~ oak_wall_sign[facing=north]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:delete"}}','{"text":"Confirmer la","bold":true,"color":"red"}','{"text":"suppression","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute if block ~ ~ ~ oak_wall_sign[facing=east] run setblock ~ ~-1 ~ oak_wall_sign[facing=east]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:delete"}}','{"text":"Confirmer la","bold":true,"color":"red"}','{"text":"suppression","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute if block ~ ~ ~ oak_wall_sign[facing=south] run setblock ~ ~-1 ~ oak_wall_sign[facing=south]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:delete"}}','{"text":"Confirmer la","bold":true,"color":"red"}','{"text":"suppression","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute if block ~ ~ ~ oak_wall_sign[facing=west] run setblock ~ ~-1 ~ oak_wall_sign[facing=west]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:delete"}}','{"text":"Confirmer la","bold":true,"color":"red"}','{"text":"suppression","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+setblock ~ ~ ~ air
+scoreboard players set confirmdelete puissance4 1
+scoreboard players set timer puissance4 0
+playsound minecraft:block.piston.extend block @a ~ ~ ~

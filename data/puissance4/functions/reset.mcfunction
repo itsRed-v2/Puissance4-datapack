@@ -1,0 +1,1 @@
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] run fill ^3 ^1 ^ ^-3 ^6 ^ air

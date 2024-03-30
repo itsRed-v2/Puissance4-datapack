@@ -1,0 +1,10 @@
+scoreboard players reset confirmdelete puissance4
+scoreboard players reset timer puissance4
+
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] if score direction puissance4 matches 0 run setblock ^5 ^ ^ minecraft:oak_wall_sign[facing=east]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:confirmdelete"}}','{"text":"Supprimer","bold":true,"color":"red"}','{"text":"le jeu","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] if score direction puissance4 matches 1 run setblock ^5 ^ ^ minecraft:oak_wall_sign[facing=south]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:confirmdelete"}}','{"text":"Supprimer","bold":true,"color":"red"}','{"text":"le jeu","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] if score direction puissance4 matches 2 run setblock ^5 ^ ^ minecraft:oak_wall_sign[facing=west]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:confirmdelete"}}','{"text":"Supprimer","bold":true,"color":"red"}','{"text":"le jeu","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] if score direction puissance4 matches 3 run setblock ^5 ^ ^ minecraft:oak_wall_sign[facing=north]{front_text:{messages:['{"text":"","clickEvent":{"action":"run_command","value":"function puissance4:confirmdelete"}}','{"text":"Supprimer","bold":true,"color":"red"}','{"text":"le jeu","bold":true,"color":"red"}','{"text":"(Click)","color":"dark_gray"}']}}
+
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] run setblock ^5 ^-1 ^ air
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done] run playsound minecraft:block.piston.contract block @a ~ ~ ~

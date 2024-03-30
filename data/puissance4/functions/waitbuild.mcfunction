@@ -1,0 +1,8 @@
+scoreboard players add timer puissance4 1
+execute if score timer puissance4 matches 20 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction dans ","color":"yellow"},{"text":"5","color":"green"},{"text":"s","color":"yellow"}]
+execute if score timer puissance4 matches 40 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction dans ","color":"yellow"},{"text":"4","color":"green"},{"text":"s","color":"yellow"}]
+execute if score timer puissance4 matches 60 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction dans ","color":"yellow"},{"text":"3","color":"green"},{"text":"s","color":"yellow"}]
+execute if score timer puissance4 matches 80 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction dans ","color":"yellow"},{"text":"2","color":"green"},{"text":"s","color":"yellow"}]
+execute if score timer puissance4 matches 100 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction dans ","color":"yellow"},{"text":"1","color":"green"},{"text":"s","color":"yellow"}]
+execute if score timer puissance4 matches 120 run title @a actionbar [{"text":"[","color":"gray"},{"text":"Puissance 4","color":"gold"},{"text":"]"},{"text":" Construction!!!","color":"yellow"}]
+execute at @e[name="Puissance 4",limit=1,type=armor_stand,tag=done,tag=notbuild] if score timer puissance4 matches 120 run function puissance4:build
